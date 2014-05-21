@@ -42,6 +42,9 @@ app.get('/', function(req, res) {
 // User endpoints
 app.use('/', require('cloud/user'));
 
+// Link creation
+app.use('/k', require('cloud/link'));
+
 // Image endpoints
 app.use('/i', require('cloud/image'));
 
